@@ -1,0 +1,157 @@
+
+\documentclass[a4paper,8pt]{article}
+
+\usepackage{parskip} 
+\usepackage{hologo}
+\usepackage{fontspec}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{2pt}{2pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\color[HTML]{110223}%{1C033C}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+% \usepackage{times}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+\setmainfont{Arial}  % Set it to whatever you like
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\color[HTML]{1C033C} \Huge{Anuj Kumar Chaudhary} \\[6pt]
+\\
+\textcolor[HTML]{371e77}{\underline{\href{mailto:your@email.com}{\raisebox{-0.05\height}{\faEnvelope} anuj.kumarchaudhary038@gmail.com}} $|$}
+\textcolor[HTML]{371e77}{\underline{\href{mailto:anuj.kumarchaudhary038@gmail.com}{\raisebox{-0.05\height}{\faEnvelope} anuj.2024ec1144@kiet.edu}} $|$}
+\textcolor[HTML]{371e77}{\href{tel:+919807145009}{\raisebox{-0.05\height}{\faMobile} +91 9807145009}}
+
+\textcolor[HTML]{371e77}{\underline{\href{https://github.com/akc2531}{\raisebox{-0.05\height}{\faGithub} github.com/akc2531}} $|$}
+\textcolor[HTML]{371e77}{\underline{\href{https://www.linkedin.com/in/anuj-kumar-chaudhary-analytics/}{\raisebox{-0.05\height}{\faLinkedin} linkedin.com/in/anuj-kumar-chaudhary-analytics/}}}
+\end{tabularx}
+
+% Education
+\section{Education}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{KIET Group of Instituions} & \hfill \color[HTML]{371e77} Expected graduation date: Jun. 2024 \\
+\color[HTML]{371e77} B.Tech. in Electronics and Communication Engineering$|$ {\uline{\href{https://akc2531.github.io/MyPortfolio/}{Link to all courses}}} & \hfill \color[HTML]{4B28A4} \textit{\textbf{Percentage: 74.29}} \\
+\color[HTML]{1C033C} \textbf{St. Basil's School, Basti} & \hfill \color[HTML]{371e77} | 2019 \\
+\color[HTML]{371e77} Senior Secondary(CISCE)  & \hfill \color[HTML]{4B28A4} \textit{\textbf{Percentage: 84.80}} \\
+\color[HTML]{1C033C} \textbf{St. Basil's School, Basti} & \hfill \color[HTML]{371e77} | 2017 \\
+\color[HTML]{371e77} Secondary(CISCE)  & \hfill \color[HTML]{4B28A4} \textit{\textbf{Percentage: 83}} \\
+\end{tabularx}
+
+
+%Experience
+\section{Experience}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\uline{\href{https://akc2531.github.io/MyPortfolio/}{IBM}}} \hfill \color[HTML]{371e77} 12th June,2023  -  24th July,2023 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Frontend Development}}\ \hfill \color[HTML]{4B28A4} \textit{HTML, CSS, Javascript, GitHub} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Responsible for developing Frontend web applications based on HTML, CSS and JavaScript.
+        \item Independently tackled the challenge of crafting a responsive 
+  website tailored for mobile platforms, and meticulously refined the CSS to achieve a more polished and efficient design.
+        \item Learnt how to deploy web applications.
+        \item Worked on key technologies like Javascript, HTML and CSS.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{{CISCO(VIRTUAL)}}} \hfill \color[HTML]{371e77} 12th May. 2023 - 10th June. 2023 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Cyber security Trainee}}\ \hfill \color[HTML]{4B28A4}  \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item As a Cybersecurity trainee, I typically undergo training and development programs to acquire the necessary skills and knowledge in the field of cybersecurity
+        \item  I was trained on promoting security awareness among employees and stakeholders.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+% Projects
+\section{Projects}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{\href{https://github.com/akc2531/COALMINERS}{Smart Helmet for Coal Miners}}} \hfill \color[HTML]{371e77} Jul. 2023 - Ongoing \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Coal Miner Sensor Monitoring System }} \hfill \color[HTML]{4B28A4} \textit{ JavaScript, HTML, CSS, ThingSpeak, Arduino IDE} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Utilizes MQ2, MQ3, MQ7, and DHT22 sensors to measure environmental parameters.
+        \item ESP32 Microcontroller is used to collect sensor data.
+        \item Real-time data visualization through a locally hosted web page created with HTML, CSS, and JavaScript.
+        \item Data transmission to ThingSpeak Cloud for remote monitoring and analysis.
+        \item Wireless monitoring through ESP8266, connected to the same server, enabling data visualization on gloves-mounted LCD screens.
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{\href{https://akc2531.github.io/MyPortfolio/}{Portfolio Website}}} \hfill \color[HTML]{371e77} June 2023 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Responsive Portfolio Website}} \hfill \color[HTML]{4B28A4} \textit{ JavaScript, HTML and CSS} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Responsive Design: The website is designed to adapt to various screen sizes, ensuring a great user experience on both mobile and desktop devices.
+        \item Interactive Content: Engage your visitors with interactive content, including smooth scrolling, animated sections, and dynamic skill bars.
+        \item About Me Section: Share your background, skills, and experience to give visitors a better understanding of who you are.
+        \item Contact Information: Provide your contact details and links to your social profiles, making it simple for others to get in touch.
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+\section{Skills}
+\color[HTML]{1C033C}\textbf{Languages:} \\[2pt]
+\color[HTML]{371e77} \hspace*{4ex} Java, CSS, HTML, SQL, Beginner in JavaScript, Time Management, Leadership\\[3pt]
+\color[HTML]{1C033C}\textbf{Certifications:} \\[2pt]
+\color[HTML]{371e77} \hspace*{4ex} \uline{\href{https://trainings.internshala.com/verify-certificate/?certificate_number=cnzk0h47ptr}{Internshala: Core Java}}.
+
+
+\section{Achievements}
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item 4-star Java coder on hackerrank
+        \item Secured 2nd position in IntraCollege technical Quiz competition
+    \end{itemize}
+    \end{minipage}
+\end{document}
+
